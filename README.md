@@ -19,3 +19,8 @@
 
 初期設定のためのコマンドです。`watch-history.html`を解析し、`urls.csv`を生成します。
 `watch-history.html`を変更した場合は再度実行してください。
+
+### `yarn mpt <year> <month>`
+
+指定した年月のデータを取得します。
+例: `yarn mpt 2019 1` で 2019 年 1 月のデータを取得します。
