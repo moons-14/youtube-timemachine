@@ -1,6 +1,12 @@
 import $ from "cheerio";
 import fs from "fs";
 
+//watch-history.htmlがあるか確認する
+if (!fs.existsSync("./watch-history.html")) {
+    console.error("watch-history.htmlが見つかりませんでした。");
+    process.exit(1);
+}
+
 // ./watch-history.htmlから読み込む
 const html = fs.readFileSync("./watch-history.html", "utf-8");
 
