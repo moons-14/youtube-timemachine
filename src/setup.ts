@@ -2,7 +2,7 @@ import $ from "cheerio";
 import fs from "fs";
 
 //watch-history.htmlがあるか確認する
-if (!fs.existsSync("../watch-history.html")) {
+if (!fs.existsSync("./watch-history.html")) {
     console.error("watch-history.htmlが見つかりませんでした。");
     process.exit(1);
 }
@@ -42,7 +42,7 @@ urls = urls.filter((url) => {
 });
 
 // urls ./urls.csvに書き込む
-fs.writeFileSync("../urls.csv", urls.map((url) => {
+fs.writeFileSync("./urls.csv", urls.map((url) => {
     return `${url.url},${url.date}`;
 }).join("\n"));
 

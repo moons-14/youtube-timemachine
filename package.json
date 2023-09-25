@@ -5,6 +5,7 @@
     "tsx": "^3.13.0"
   },
   "scripts": {
-    "setup": "tsx src/setup.ts"
+    "setup": "tsx src/setup.ts",
+    "mpt": "tsx src/monthlyPlaybackTop.ts"
   }
 }
